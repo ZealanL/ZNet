@@ -51,8 +51,8 @@ using ZNet.NeuralNet.Util;
                     for(int n = 0; n < Weights [l].Length; n++) {
                         for (int w = 0; w < Weights[l][n].Length; w++) {
 
-                            //Initialize weight from -0.25f to 0.25f
-                            Weights[l][n][w] = (float)(Config.random.NextDouble() - 0.5f)/2;
+                            //Initialize weight from -0.5f to 0.5f
+                            Weights[l][n][w] = (float)Config.random.NextDouble() - 0.5f;
                         }
                     }
                 }
